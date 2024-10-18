@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias da Escola</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+
+<header>
+    <h1>Memórias da Escola</h1>
+    <p>Aviso aos lerdos (buiu) passe o mouse pelas imagens</p>
+</header>
+
+<div class="intro">
+    <h2>Resumo do Fundamental</h2>
+    <p>No meu fundamental eu era uma criança bem desgraçada, gostava de fazer tudo que não podia, lembro me de uma vez em que estava chovendo e eu atentado que era, fiquei brincando com os colegas embaixo de uma cascata de água, isso dentro do colégio, aquele dia eu levei um bilhete para a minha mãe assinar kk, eu conversava com todo mundo, era divertido!</p>
+</div>
+
+<div class="image-row">
+    <div class="card">
+        <img src="1.jpeg" alt="Descrição da imagem 1">
+        <div class="overlay">Sei lá de onde eu tenho essa foto (EPOCA DE PANDEMIA)</div>
+    </div>
+    <div class="card">
+        <img src="3.jpeg" alt="Descrição da imagem 2">
+        <div class="overlay">Passeio do colégio que eu fiz, foi legal, desafio me achar</div>
+    </div>
+    <div class="card">
+        <img src="2.jpeg" alt="Descrição da imagem 3">
+        <div class="overlay">O cara feliz da vida esperando a aula acabar</div>
+    </div>
+</div>
+
+<!-- Nova seção para a imagem e o botão -->
+<div class="single-image" style="text-align: center;">
+    <p style="margin-bottom: 10px;">Ester egg</p>
+
+    <img src="7.jpeg" alt="Descrição da imagem">
+    <div style="margin-top: 10px;">
+        <button onclick="playAudioFrom(0)">Reproduzir Som</button> <!-- Toca a partir de 58 segundos -->
+    </div>
+    <audio id="audio" src="oh-my-god-meme.mp3"></audio>
+</div>
+
+<script>
+function playAudioFrom(seconds) {
+    var audio = document.getElementById('audio');
+    audio.currentTime = seconds; // Define o tempo em que deve começar a tocar
+    audio.play(); // Reproduz o áudio
+}
+</script>
+
+<div class="additional-images">
+    <div class="intro">
+        <h3 class="limited-text">Resumo do Ensino Médio</h3>
+        <p>No meu ensino médio eu já perdi algumas amizades que eu tinha no fundamental, pois eu mudei de colégio, para o Morelli pra ser mais específico, mas ainda sim fiz uns amigos, inclusive o Leandro do 3F, ele é um desgraçado kk, mas depois que passou a pandemia o único amigo verdadeiro que me restou foi realmente ele, hoje sou mais quieto na minha, e odeia com todas as forças o colégio, ainda bem que está acabando!</p>
+    </div>
+    <div class="image-row">
+        <div class="card">
+            <img src="5.jpeg" alt="Descrição da imagem 4">
+            <div class="overlay">A internet tava boa esse dia</div>
+        </div>
+        <div class="card">
+            <img src="4.jpeg" alt="Descrição da imagem 5">
+            <div class="overlay">BILL CIPHER?</div>
+        </div>
+        <div class="card">
+            <img src="6.jpeg" alt="Descrição da imagem 6">
+            <div class="overlay">Poliedros super fodas</div>
+        </div>
+    </div>
+   
+    </div>
+</div>
+
+<footer>
+    <p>Escola: Colégio Estadual Padre Claudio Morelli</p>
+    <p>Nome do Aluno: Vinicios Santos de Oliveira</p>
+    <p>Nº: 39</p>
+</footer>
+
+</body>
+</html>
